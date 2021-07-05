@@ -11,7 +11,7 @@ function Calendar(props) {
     const [date, setDate] = useState(new Date());
 
     const handleChange = date => {
-        const time = new Date(date).getTime() + 4 * (3600000); 
+        const time = new Date(date).getTime() + 5.5 * (3600000); 
         props.updatedData(time, props.item);
         setDate(date);
         setView(false);

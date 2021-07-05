@@ -17,7 +17,7 @@ function ControlledTabs(props) {
     };
 
 
-    const dt = new Date(props.date).getTime() + 4 * (3600000); 
+    const dt = new Date(props.date).getTime() + 5.5 * (3600000); 
     const updated = data.body.map(item => {
         if (item['name'] === props.param)
             item['createdOn'] = dt;
